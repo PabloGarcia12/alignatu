@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn how the ALIGNA guided movement mat works. Step-by-step lower back pain relief routines, alignment guidance, and a structured home exercise system.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.alignamat.com/how-it-works.html">
+<title>How It Works — ALIGNA Guided Movement System</title>
+<style>
+/* ALIGNA — Global Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+:root {
+  --cream: #f7f4ef;
+  --cream2: #f0ebe2;
+  --sand: #e8dfd0;
+  --bark: #b8a898;
+  --stone: #7a6e64;
+  --ink: #1c1a18;
+  --ink2: #2e2b27;
+  --accent: #4a6741;
+  --accent2: #6b9467;
+  --accent-light: #e8f0e6;
+  --white: #ffffff;
+  --line: rgba(28,26,24,0.1);
+  --line2: rgba(28,26,24,0.06);
+  --r: 2px;
+  --max: 1160px;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ── TYPOGRAPHY ── */
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; line-height: 1.15; }
+
+.display {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.display em { font-style: italic; color: var(--accent); }
+
+h2.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+}
+
+.label {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+.body-lg { font-size: 1.05rem; line-height: 1.8; }
+.body-sm { font-size: 0.875rem; line-height: 1.7; }
+
+/* ── LAYOUT ── */
+.container { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
+.section { padding: 6rem 0; }
+.section-sm { padding: 4rem 0; }
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(247,244,239,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  transition: all 0.3s;
+}
+
+.nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+
+.nav-logo span { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active { color: var(--ink); }
+
+.nav-cta {
+  background: var(--ink);
+  color: var(--cream) !important;
+  padding: 0.55rem 1.25rem;
+  border-radius: 1px;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.15em !important;
+  transition: background 0.2s !important;
+}
+
+.nav-cta:hover { background: var(--accent) !important; color: var(--white) !important; }
+
+.nav-mobile-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-mobile-btn span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--ink);
+  transition: all 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 64px; left: 0; right: 0;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+  padding: 1.5rem 2rem;
+  z-index: 99;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mobile-menu.open { display: flex; }
+
+.mobile-menu a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-radius: 1px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.btn-dark:hover { background: var(--accent); color: var(--white); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+.btn-outline:hover { background: var(--ink); color: var(--cream); }
+
+.btn-accent {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.btn-accent:hover { background: var(--ink); }
+
+/* ── DECORATIVE MAT SVG ── */
+.mat-visual {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--bark);
+  margin: 1.5rem 0;
+}
+
+.divider-center { margin: 1.5rem auto; }
+
+/* ── PILL ── */
+.pill {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  margin-bottom: 1.25rem;
+}
+
+/* ── CARDS ── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 2rem;
+}
+
+/* ── FORM ── */
+.email-form {
+  display: flex;
+  gap: 0;
+  max-width: 480px;
+}
+
+.email-form input {
+  flex: 1;
+  background: var(--white);
+  border: 1px solid var(--sand);
+  border-right: none;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  padding: 0.9rem 1.25rem;
+  outline: none;
+  border-radius: 1px 0 0 1px;
+  transition: border-color 0.2s;
+}
+
+.email-form input:focus { border-color: var(--accent); }
+.email-form input::placeholder { color: var(--bark); }
+
+.email-form button {
+  background: var(--ink);
+  color: var(--cream);
+  border: none;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0 1px 1px 0;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.email-form button:hover { background: var(--accent); }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--ink2);
+  color: var(--bark);
+  padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand { }
+.footer-logo {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--cream);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.footer-logo span { color: var(--accent2); }
+.footer-tagline { font-size: 0.8rem; color: var(--stone); line-height: 1.7; max-width: 220px; }
+
+.footer-col h4 {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.5rem; }
+.footer-col ul li a { font-size: 0.8rem; color: var(--stone); transition: color 0.2s; }
+.footer-col ul li a:hover { color: var(--cream); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p { font-size: 0.72rem; color: var(--stone); }
+.footer-disclaimer { font-size: 0.65rem; color: var(--stone); opacity: 0.7; max-width: 600px; line-height: 1.6; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes drawLine {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+.fade-up { animation: fadeUp 0.8s ease both; }
+.fade-up-2 { animation: fadeUp 0.8s 0.15s ease both; }
+.fade-up-3 { animation: fadeUp 0.8s 0.3s ease both; }
+.fade-up-4 { animation: fadeUp 0.8s 0.45s ease both; }
+.fade-in { animation: fadeIn 1s ease both; }
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-mobile-btn { display: flex; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .section { padding: 4rem 0; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 1.25rem; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .email-form { flex-direction: column; }
+  .email-form input { border-right: 1px solid var(--sand); border-bottom: none; border-radius: 1px 1px 0 0; }
+  .email-form button { border-radius: 0 0 1px 1px; padding: 0.9rem; }
+}
+
+</style>
+<style>
+.page-hero { padding: 140px 0 80px; background: var(--cream2); border-bottom: 1px solid var(--line); }
+
+/* USAGE STEPS */
+.usage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.usage-steps { display: flex; flex-direction: column; gap: 2.5rem; }
+
+.usage-step {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--line);
+  transition: border-color 0.25s;
+}
+
+.usage-step:hover { border-left-color: var(--accent); }
+
+.usage-step-num {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--accent);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 40px;
+}
+
+.usage-step h3 {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.usage-step p { font-size: 0.85rem; color: var(--stone); line-height: 1.7; }
+
+/* ROUTINE CATEGORIES */
+.routines-section { background: var(--ink2); }
+
+.routine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.routine-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 2px;
+  padding: 2rem;
+  transition: border-color 0.25s, background 0.25s;
+}
+
+.routine-card:hover {
+  border-color: rgba(107,148,103,0.4);
+  background: rgba(74,103,65,0.08);
+}
+
+.routine-duration {
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--accent2);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.routine-card h3 {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+
+.routine-card p { font-size: 0.78rem; color: var(--bark); line-height: 1.7; margin-bottom: 1.25rem; }
+
+.routine-moves { list-style: none; }
+.routine-moves li {
+  font-size: 0.72rem;
+  color: var(--stone);
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.routine-moves li::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--accent2); flex-shrink: 0; }
+.routine-moves li:last-child { border-bottom: none; }
+
+.routine-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.badge-free { background: rgba(74,103,65,0.2); color: var(--accent2); }
+.badge-members { background: rgba(184,168,152,0.1); color: var(--bark); }
+
+/* VIDEO LIBRARY */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.video-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.video-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.video-thumb {
+  background: var(--ink2);
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.play-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(74,103,65,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.video-card:hover .play-btn { background: var(--accent); transform: scale(1.08); }
+
+.play-btn svg { width: 20px; height: 20px; fill: white; margin-left: 3px; }
+
+.video-coming {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: rgba(28,26,24,0.7);
+  color: var(--bark);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+}
+
+.video-info { padding: 1.25rem; }
+.video-info h3 { font-family: var(--sans); font-size: 0.85rem; font-weight: 500; margin-bottom: 0.25rem; }
+.video-info p { font-size: 0.75rem; color: var(--stone); }
+.video-meta { display: flex; gap: 1rem; margin-top: 0.75rem; font-size: 0.68rem; color: var(--bark); }
+
+/* WHY IT WORKS */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.why-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.why-num {
+  font-family: var(--serif);
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--accent-light);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.why-card h3 { font-family: var(--sans); font-size: 0.82rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+.why-card p { font-size: 0.82rem; color: var(--stone); line-height: 1.7; }
+
+/* MEMBERSHIP TEASER */
+.membership-section {
+  background: var(--sand);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.membership-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.membership-plans {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.plan-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.plan-card.featured { border-color: var(--accent); }
+
+.plan-icon {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-light);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.plan-info h3 { font-family: var(--sans); font-size: 0.82rem; font-weight: 500; margin-bottom: 0.2rem; }
+.plan-info p { font-size: 0.75rem; color: var(--stone); line-height: 1.5; }
+.plan-price { margin-left: auto; text-align: right; font-family: var(--serif); font-size: 1.1rem; color: var(--accent); white-space: nowrap; }
+
+@media (max-width: 900px) {
+  .usage-grid, .membership-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .routine-grid, .why-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .video-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">ALIGN<span>A</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="the-mat.html">The Mat</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+    </ul>
+    <button class="nav-mobile-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="the-mat.html">The Mat</a>
+  <a href="how-it-works.html">How It Works</a><a href="our-story.html">Our Story</a>
+  <a href="index.html#waitlist">Join Waitlist</a>
+</div>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="label">The system</span>
+    <div class="divider"></div>
+    <h1 class="display fade-up" style="max-width:640px">More than a mat.<br>A guided <em>practice.</em></h1>
+    <p class="body-lg fade-up-2" style="color:var(--stone);max-width:520px;margin-top:1.5rem">ALIGNA is designed to work as a complete system — mat, markings, and movement routines working together to build a consistent, effective home practice.</p>
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="section">
+  <div class="container">
+    <div class="usage-grid">
+      <div class="reveal">
+        <span class="label">How to use it</span>
+        <div class="divider"></div>
+        <h2 class="section-title">Your practice,<br>step by step.</h2>
+        <p class="body-lg" style="color:var(--stone);margin-top:1rem">The mat removes every source of uncertainty from your home routine. You always know where to start, how to position, and how to move.</p>
+      </div>
+      <div class="usage-steps">
+        <div class="usage-step reveal" data-delay="0">
+          <div class="usage-step-num">1</div>
+          <div>
+            <h3>Lay out the mat — face down</h3>
+            <p>Position the mat on a firm, flat surface. Lie face down for extension exercises, or face up for flexion work. The center line aligns with your spine from the first moment.</p>
+          </div>
+        </div>
+        <div class="usage-step reveal" data-delay="100">
+          <div class="usage-step-num">2</div>
+          <div>
+            <h3>Find your body zone</h3>
+            <p>Shoulder markers, hip lines, knee guides — each zone tells you exactly where that body part should start for each exercise. No measuring, no estimating.</p>
+          </div>
+        </div>
+        <div class="usage-step reveal" data-delay="200">
+          <div class="usage-step-num">3</div>
+          <div>
+            <h3>Use the angle guides to move</h3>
+            <p>As you perform each movement, the angle lines give you a constant visual reference. You can see — in real time — whether you're staying within the correct range.</p>
+          </div>
+        </div>
+        <div class="usage-step reveal" data-delay="300">
+          <div class="usage-step-num">4</div>
+          <div>
+            <h3>Track consistency with the ruler marks</h3>
+            <p>The lateral ruler marks let you reproduce the same exercise with the same range of motion every session. This is how progressive improvement becomes measurable.</p>
+          </div>
+        </div>
+        <div class="usage-step reveal" data-delay="400">
+          <div class="usage-step-num">5</div>
+          <div>
+            <h3>Follow the routine — daily</h3>
+            <p>Consistency is the key to lasting lower back relief. A 10–15 minute daily practice with correct alignment produces results that sporadic, unguided exercise cannot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROUTINES -->
+<section class="routines-section section">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label" style="color:var(--accent2)">Movement categories</span>
+      <div class="divider divider-center" style="background:var(--accent2)"></div>
+      <h2 class="section-title" style="color:var(--cream)">Four routines.<br>One consistent practice.</h2>
+      <p style="color:var(--bark);max-width:520px;margin:1rem auto 0;font-size:0.9rem;line-height:1.8">Each routine is designed to be done independently or combined. Start with 10 minutes. Build from there.</p>
+    </div>
+    <div class="routine-grid">
+      <div class="routine-card reveal" data-delay="0">
+        <div class="routine-duration">10'</div>
+        <h3>Morning mobility</h3>
+        <p>Wake up your spine gently before the day begins. Designed for the first 10 minutes after rising.</p>
+        <ul class="routine-moves">
+          <li>Pelvic tilts — center alignment</li>
+          <li>Knee-to-chest stretch</li>
+          <li>Cat-cow flow</li>
+          <li>Supine spinal rotation</li>
+          <li>Hip flexor opener</li>
+        </ul>
+        <span class="routine-badge badge-free">Included with mat</span>
+      </div>
+      <div class="routine-card reveal" data-delay="100">
+        <div class="routine-duration">15'</div>
+        <h3>Lower back relief</h3>
+        <p>The core routine. Specifically sequenced for disc herniation recovery and chronic lower back tension.</p>
+        <ul class="routine-moves">
+          <li>Prone press-up (McKenzie)</li>
+          <li>Bird-dog — angle guide</li>
+          <li>Glute bridge — hip zone marker</li>
+          <li>Child's pose decompression</li>
+          <li>Dead bug — center ring</li>
+          <li>Piriformis stretch</li>
+        </ul>
+        <span class="routine-badge badge-free">Included with mat</span>
+      </div>
+      <div class="routine-card reveal" data-delay="200">
+        <div class="routine-duration">12'</div>
+        <h3>Stretch & reset</h3>
+        <p>End-of-day release for accumulated tension. Slow, deliberate movement with long holds.</p>
+        <ul class="routine-moves">
+          <li>Figure-four hip opener</li>
+          <li>Doorway chest stretch</li>
+          <li>Thoracic rotation</li>
+          <li>Hamstring lengthener</li>
+          <li>Savasana alignment hold</li>
+        </ul>
+        <span class="routine-badge badge-members">Extended library</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO LIBRARY -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label">Guided video library</span>
+      <div class="divider divider-center"></div>
+      <h2 class="section-title">Follow along.<br>Every session.</h2>
+      <p class="body-lg" style="color:var(--stone);max-width:520px;margin:1rem auto 0">Video routines are being produced to accompany your mat. Every video is filmed from above — so you can see exactly how the alignment markings work in real motion.</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-card reveal" data-delay="0">
+        <div class="video-thumb">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+          <span class="video-coming">Coming soon</span>
+        </div>
+        <div class="video-info">
+          <h3>Alignment Basics — Session 1</h3>
+          <p>Introduction to the mat markings and your first guided lower back routine.</p>
+          <div class="video-meta"><span>5 min</span><span>Beginner</span><span>Lower back</span></div>
+        </div>
+      </div>
+      <div class="video-card reveal" data-delay="100">
+        <div class="video-thumb">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+          <span class="video-coming">Coming soon</span>
+        </div>
+        <div class="video-info">
+          <h3>10-Minute Guided Morning Flow</h3>
+          <p>Follow along with the morning mobility routine using all alignment guides.</p>
+          <div class="video-meta"><span>10 min</span><span>All levels</span><span>Mobility</span></div>
+        </div>
+      </div>
+      <div class="video-card reveal" data-delay="200">
+        <div class="video-thumb">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+          <span class="video-coming">Coming soon</span>
+        </div>
+        <div class="video-info">
+          <h3>Lower Back Relief — Full Routine</h3>
+          <p>The complete 15-minute lower back relief session with real-time alignment cueing.</p>
+          <div class="video-meta"><span>15 min</span><span>Intermediate</span><span>Back pain</span></div>
+        </div>
+      </div>
+      <div class="video-card reveal" data-delay="300">
+        <div class="video-thumb">
+          <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+          <span class="video-coming">Coming soon</span>
+        </div>
+        <div class="video-info">
+          <h3>Posture Reset — Desk Worker Edition</h3>
+          <p>A targeted routine for people who sit for long hours and carry tension in the lumbar region.</p>
+          <div class="video-meta"><span>12 min</span><span>All levels</span><span>Posture</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY IT WORKS -->
+<section class="section" style="background:var(--cream2)">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label">The science of it</span>
+      <div class="divider divider-center"></div>
+      <h2 class="section-title">Why guided movement<br>actually works.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal" data-delay="0">
+        <div class="why-num">93%</div>
+        <h3>Pilates-based exercises reduce pain</h3>
+        <p>A 2022 review of 118 controlled trials found structured, guided movement exercises had the highest likelihood of reducing back pain and disability among all intervention types studied.</p>
+      </div>
+      <div class="why-card reveal" data-delay="150">
+        <div class="why-num">97%</div>
+        <h3>Disc herniations improve without surgery</h3>
+        <p>Research shows that the vast majority of disc herniations resolve with consistent, correctly performed movement therapy — the key word being <em>correctly</em>.</p>
+      </div>
+      <div class="why-card reveal" data-delay="300">
+        <div class="why-num">10'</div>
+        <h3>Daily consistency beats intensity</h3>
+        <p>Physical therapy research consistently shows that 10–15 minutes of correct, daily movement outperforms longer, irregular sessions for chronic lower back conditions.</p>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:0.68rem;color:var(--bark);margin-top:2rem;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.7">
+      These statistics are cited for educational purposes. ALIGNA is not a medical product. Always consult a healthcare professional for personal medical guidance.
+    </p>
+  </div>
+</section>
+
+<!-- MEMBERSHIP TEASER -->
+<section class="membership-section section">
+  <div class="container">
+    <div class="membership-inner">
+      <div class="reveal">
+        <span class="label">What's included</span>
+        <div class="divider"></div>
+        <h2 class="section-title">Start with the mat.<br>Grow with the system.</h2>
+        <p class="body-lg" style="color:var(--stone);margin-top:1rem;margin-bottom:2rem">Every ALIGNA mat includes a starter routine guide and access to introductory videos. For those who want a full guided library, a membership option is planned for launch.</p>
+        <a href="index.html#waitlist" class="btn btn-dark">Join Waitlist for Early Access</a>
+      </div>
+      <div class="membership-plans reveal">
+        <div class="plan-card">
+          <div class="plan-icon">①</div>
+          <div class="plan-info">
+            <h3>Mat Only</h3>
+            <p>Full precision alignment mat + printed starter guide + beginner routine booklet + 3 intro videos</p>
+          </div>
+          <div class="plan-price">$129</div>
+        </div>
+        <div class="plan-card featured">
+          <div class="plan-icon">②</div>
+          <div class="plan-info">
+            <h3>Mat + Video Library</h3>
+            <p>Everything in Mat Only + 3-month full video library access + new routines added monthly</p>
+          </div>
+          <div class="plan-price">TBD</div>
+        </div>
+        <div class="plan-card">
+          <div class="plan-icon">③</div>
+          <div class="plan-info">
+            <h3>Premium Starter Pack</h3>
+            <p>Mat + video library + 1:1 routine consultation + premium carry case + early access perks</p>
+          </div>
+          <div class="plan-price">TBD</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="email-section section" style="background:var(--ink)">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <h2 class="section-title" style="color:var(--cream);font-size:clamp(1.8rem,3.5vw,2.8rem)">Ready to build your practice?</h2>
+      <p style="color:var(--bark);margin:1.5rem auto;max-width:440px;font-size:0.9rem;line-height:1.8">Join the waitlist and be first to access ALIGNA when it launches — with early pricing and your free guided routine guide.</p>
+      <form class="email-form" style="margin:0 auto" onsubmit="return false">
+        <input type="email" placeholder="Your email address" autocomplete="email" required>
+        <button type="submit">Join Waitlist</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">ALIGN<span>A</span></div><p class="footer-tagline">A premium guided movement mat designed to support aligned, confident movement at home.</p></div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="the-mat.html">The Mat</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="index.html#waitlist">Join Waitlist</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="our-story.html">Our Story</a></li><li><a href="our-story.html#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="legal.html#privacy">Privacy Policy</a></li><li><a href="legal.html#terms">Terms</a></li><li><a href="legal.html#disclaimer">Disclaimer</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ALIGNA. All rights reserved.</p>
+      <p class="footer-disclaimer">ALIGNA is a wellness product, not a medical device. Consult a healthcare professional before beginning any new exercise program.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ALIGNA — Shared JavaScript
+
+// Mobile menu
+const mobileBtn = document.querySelector('.nav-mobile-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+  document.addEventListener('click', e => {
+    if (!mobileBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+      mobileMenu.classList.remove('open');
+    }
+  });
+}
+
+// Active nav link
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
+  if (link.getAttribute('href') === currentPage) link.classList.add('active');
+});
+
+// Scroll reveal
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      entry.target.style.transitionDelay = (entry.target.dataset.delay || 0) + 'ms';
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// Email form handler
+document.querySelectorAll('.email-form').forEach(form => {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const input = form.querySelector('input[type="email"]');
+    const btn = form.querySelector('button');
+    if (!input.value || !input.value.includes('@')) {
+      input.style.borderColor = '#c94040';
+      setTimeout(() => input.style.borderColor = '', 2000);
+      return;
+    }
+    // Replace this with your actual email service (Mailchimp, ConvertKit, etc.)
+    btn.textContent = 'Thank you!';
+    btn.style.background = '#4a6741';
+    input.value = '';
+    setTimeout(() => {
+      btn.textContent = 'Join Waitlist';
+      btn.style.background = '';
+    }, 4000);
+  });
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(item => {
+  const q = item.querySelector('.faq-q');
+  const a = item.querySelector('.faq-a');
+  const icon = item.querySelector('.faq-icon');
+  if (q && a) {
+    q.addEventListener('click', () => {
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        const ia = i.querySelector('.faq-a');
+        const ii = i.querySelector('.faq-icon');
+        if (ia) ia.style.maxHeight = null;
+        if (ii) ii.textContent = '+';
+      });
+      if (!open) {
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+        if (icon) icon.textContent = '−';
+      }
+    });
+  }
+});
+
+</script>
+</body>
+</html>

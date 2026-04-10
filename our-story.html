@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The story behind ALIGNA — a guided movement mat born from five years of personal back pain recovery. Founder story, mission, and brand values.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.alignamat.com/our-story.html">
+<title>Our Story — ALIGNA, Born from Personal Experience</title>
+<style>
+/* ALIGNA — Global Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+:root {
+  --cream: #f7f4ef;
+  --cream2: #f0ebe2;
+  --sand: #e8dfd0;
+  --bark: #b8a898;
+  --stone: #7a6e64;
+  --ink: #1c1a18;
+  --ink2: #2e2b27;
+  --accent: #4a6741;
+  --accent2: #6b9467;
+  --accent-light: #e8f0e6;
+  --white: #ffffff;
+  --line: rgba(28,26,24,0.1);
+  --line2: rgba(28,26,24,0.06);
+  --r: 2px;
+  --max: 1160px;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ── TYPOGRAPHY ── */
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; line-height: 1.15; }
+
+.display {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.display em { font-style: italic; color: var(--accent); }
+
+h2.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+}
+
+.label {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+.body-lg { font-size: 1.05rem; line-height: 1.8; }
+.body-sm { font-size: 0.875rem; line-height: 1.7; }
+
+/* ── LAYOUT ── */
+.container { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
+.section { padding: 6rem 0; }
+.section-sm { padding: 4rem 0; }
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(247,244,239,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  transition: all 0.3s;
+}
+
+.nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+
+.nav-logo span { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active { color: var(--ink); }
+
+.nav-cta {
+  background: var(--ink);
+  color: var(--cream) !important;
+  padding: 0.55rem 1.25rem;
+  border-radius: 1px;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.15em !important;
+  transition: background 0.2s !important;
+}
+
+.nav-cta:hover { background: var(--accent) !important; color: var(--white) !important; }
+
+.nav-mobile-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-mobile-btn span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--ink);
+  transition: all 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 64px; left: 0; right: 0;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+  padding: 1.5rem 2rem;
+  z-index: 99;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mobile-menu.open { display: flex; }
+
+.mobile-menu a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-radius: 1px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.btn-dark:hover { background: var(--accent); color: var(--white); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+.btn-outline:hover { background: var(--ink); color: var(--cream); }
+
+.btn-accent {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.btn-accent:hover { background: var(--ink); }
+
+/* ── DECORATIVE MAT SVG ── */
+.mat-visual {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--bark);
+  margin: 1.5rem 0;
+}
+
+.divider-center { margin: 1.5rem auto; }
+
+/* ── PILL ── */
+.pill {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  margin-bottom: 1.25rem;
+}
+
+/* ── CARDS ── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 2rem;
+}
+
+/* ── FORM ── */
+.email-form {
+  display: flex;
+  gap: 0;
+  max-width: 480px;
+}
+
+.email-form input {
+  flex: 1;
+  background: var(--white);
+  border: 1px solid var(--sand);
+  border-right: none;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  padding: 0.9rem 1.25rem;
+  outline: none;
+  border-radius: 1px 0 0 1px;
+  transition: border-color 0.2s;
+}
+
+.email-form input:focus { border-color: var(--accent); }
+.email-form input::placeholder { color: var(--bark); }
+
+.email-form button {
+  background: var(--ink);
+  color: var(--cream);
+  border: none;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0 1px 1px 0;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.email-form button:hover { background: var(--accent); }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--ink2);
+  color: var(--bark);
+  padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand { }
+.footer-logo {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--cream);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.footer-logo span { color: var(--accent2); }
+.footer-tagline { font-size: 0.8rem; color: var(--stone); line-height: 1.7; max-width: 220px; }
+
+.footer-col h4 {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.5rem; }
+.footer-col ul li a { font-size: 0.8rem; color: var(--stone); transition: color 0.2s; }
+.footer-col ul li a:hover { color: var(--cream); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p { font-size: 0.72rem; color: var(--stone); }
+.footer-disclaimer { font-size: 0.65rem; color: var(--stone); opacity: 0.7; max-width: 600px; line-height: 1.6; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes drawLine {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+.fade-up { animation: fadeUp 0.8s ease both; }
+.fade-up-2 { animation: fadeUp 0.8s 0.15s ease both; }
+.fade-up-3 { animation: fadeUp 0.8s 0.3s ease both; }
+.fade-up-4 { animation: fadeUp 0.8s 0.45s ease both; }
+.fade-in { animation: fadeIn 1s ease both; }
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .nav-mobile-btn { display: flex; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .section { padding: 4rem 0; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 1.25rem; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .email-form { flex-direction: column; }
+  .email-form input { border-right: 1px solid var(--sand); border-bottom: none; border-radius: 1px 1px 0 0; }
+  .email-form button { border-radius: 0 0 1px 1px; padding: 0.9rem; }
+}
+
+</style>
+<style>
+.page-hero { padding: 140px 0 80px; background: var(--ink2); color: var(--cream); }
+.page-hero .label { color: var(--accent2); }
+.page-hero .display em { color: var(--accent2); }
+
+/* FOUNDER STORY */
+.story-section { }
+
+.story-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.story-sticky {
+  position: sticky;
+  top: 90px;
+}
+
+.founder-photo-block {
+  background: var(--ink2);
+  border-radius: 2px;
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.founder-placeholder-lg {
+  text-align: center;
+  color: var(--stone);
+}
+
+.founder-placeholder-lg p { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.75rem; }
+
+.founder-card {
+  background: var(--cream2);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1.5rem;
+}
+
+.founder-card h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; margin-bottom: 0.25rem; }
+.founder-card p { font-size: 0.75rem; color: var(--stone); }
+.founder-card .label { display: block; margin-bottom: 0.3rem; }
+
+/* STORY TEXT */
+.story-text { }
+
+.story-chapter {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.story-chapter:last-child { border-bottom: none; }
+
+.chapter-num {
+  font-family: var(--serif);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.story-chapter h2 { font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 300; margin-bottom: 1.25rem; }
+
+.story-chapter p {
+  font-size: 0.925rem;
+  color: var(--stone);
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+
+.story-chapter p:last-child { margin-bottom: 0; }
+
+.story-pull {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.5;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  border-left: 2px solid var(--accent);
+  margin: 2rem 0;
+}
+
+/* MISSION */
+.mission-section { background: var(--cream2); }
+
+.mission-statement {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.mission-statement h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.mission-statement h2 em { font-style: italic; color: var(--accent); }
+
+/* BRAND VALUES */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 3rem;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.value-card {
+  background: var(--white);
+  padding: 2rem;
+  transition: background 0.25s;
+}
+
+.value-card:hover { background: var(--accent-light); }
+
+.value-word {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.value-card p { font-size: 0.78rem; color: var(--stone); line-height: 1.7; }
+
+/* FUTURE VISION */
+.vision-section { }
+
+.vision-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.vision-item {
+  padding: 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: border-color 0.2s;
+}
+
+.vision-item:hover { border-color: var(--accent); }
+
+.vision-icon {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  color: var(--accent);
+  flex-shrink: 0;
+  width: 36px;
+}
+
+.vision-item h3 { font-family: var(--sans); font-size: 0.8rem; font-weight: 500; margin-bottom: 0.3rem; }
+.vision-item p { font-size: 0.78rem; color: var(--stone); line-height: 1.6; }
+
+/* CONTACT */
+.contact-section { background: var(--sand); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+
+.contact-form { display: flex; flex-direction: column; gap: 1rem; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+.form-field { display: flex; flex-direction: column; gap: 0.35rem; }
+
+.form-field label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  background: var(--white);
+  border: 1px solid var(--sand);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  padding: 0.8rem 1rem;
+  border-radius: 1px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus { border-color: var(--accent); }
+
+.form-field textarea { min-height: 120px; resize: vertical; }
+
+.contact-types { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+
+.contact-type-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.ctc-icon { font-size: 1.2rem; flex-shrink: 0; }
+.contact-type-card h3 { font-family: var(--sans); font-size: 0.8rem; font-weight: 500; margin-bottom: 0.2rem; }
+.contact-type-card p { font-size: 0.72rem; color: var(--stone); line-height: 1.5; }
+
+@media (max-width: 900px) {
+  .story-layout, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .story-sticky { position: static; }
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .vision-items { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .values-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">ALIGN<span>A</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="the-mat.html">The Mat</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+    </ul>
+    <button class="nav-mobile-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="the-mat.html">The Mat</a>
+  <a href="how-it-works.html">How It Works</a><a href="our-story.html">Our Story</a>
+  <a href="index.html#waitlist">Join Waitlist</a>
+</div>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="label">Our story</span>
+    <div class="divider" style="background:var(--accent2)"></div>
+    <h1 class="display fade-up" style="max-width:600px;color:var(--cream)">Built from<br>personal <em>experience.</em></h1>
+    <p class="body-lg fade-up-2" style="color:var(--bark);max-width:500px;margin-top:1.5rem">ALIGNA was not created in a lab. It was developed on a mat — over five years — by someone living with the problem it solves.</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story-section section">
+  <div class="container">
+    <div class="story-layout">
+      <div class="story-sticky reveal">
+        <div class="founder-photo-block">
+          <div class="founder-placeholder-lg">
+            <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="var(--stone)" stroke-width="0.8">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <p>Founder photo</p>
+          </div>
+        </div>
+        <div class="founder-card">
+          <span class="label">The founder</span>
+          <h3>Your Name</h3>
+          <p>Creator of ALIGNA · Diagnosed with herniated disc · 5 years of guided movement research and daily practice</p>
+        </div>
+      </div>
+
+      <div class="story-text">
+        <div class="story-chapter reveal">
+          <div class="chapter-num">Chapter 01</div>
+          <h2>The diagnosis that changed everything</h2>
+          <p>Five years ago, I received a diagnosis that redefined how I thought about my body: a herniated disc. Like most people in that moment, my first instinct was to stop moving. Rest. Wait for it to get better on its own.</p>
+          <p>It didn't. And after weeks of pain, restricted movement, and frustrated attempts at home exercises that felt uncertain and unsafe, I turned to physical therapy.</p>
+          <blockquote class="story-pull">
+            "The exercises worked. But only when I did them correctly. And correctly, without visual guidance, was nearly impossible to achieve at home."
+          </blockquote>
+          <p>My therapist gave me a list of exercises. What they couldn't give me was the ability to replicate their hands-on guidance in my own living room. Every session at home felt like guesswork — am I rotated the right way? Is my hip in the right position? How far is too far?</p>
+        </div>
+
+        <div class="story-chapter reveal">
+          <div class="chapter-num">Chapter 02</div>
+          <h2>Designing a solution for myself</h2>
+          <p>I started marking my own mat. First with tape. Then with more precision — circles for my center point, lines for alignment references, zones for body placement. Within weeks, something changed.</p>
+          <p>The exercises became unambiguous. I stopped second-guessing my positioning. My routine became consistent. And for the first time since the diagnosis, I felt real, lasting progress.</p>
+          <p>Over the following years, I refined the system — working through dozens of iterations of the marking layout, refining which reference points actually mattered for the exercises that delivered results. The ones rooted in evidence. The ones physical therapists actually recommend.</p>
+          <blockquote class="story-pull">
+            "What I had was not just a marked-up mat. It was a guided movement system — and it was working."
+          </blockquote>
+        </div>
+
+        <div class="story-chapter reveal">
+          <div class="chapter-num">Chapter 03</div>
+          <h2>The decision to share it</h2>
+          <p>For years, ALIGNA was a personal tool. It wasn't until I began talking to others dealing with lower back pain — colleagues, friends, family — that I realised how universal the problem was.</p>
+          <p>Most people knew they should exercise. Most had tried. Most had stopped — not because they lacked motivation, but because they lacked a system they trusted. A reference. Something that told them: this is right, this is where you should be, this is how you move safely.</p>
+          <p>That's when I decided to produce ALIGNA properly. To turn five years of personal development into a product that anyone could use — regardless of prior experience, regardless of access to a therapist, regardless of where they live.</p>
+          <p>This is not just a mat. It is a system that gives your body a framework for healing itself — with structure, consistency, and confidence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission-section section" id="mission">
+  <div class="container">
+    <div class="mission-statement reveal">
+      <span class="label">Our mission</span>
+      <div class="divider divider-center"></div>
+      <h2>To help people feel more <em>confident</em> moving their bodies at home — through guided design, premium quality, and a system built on <em>real experience.</em></h2>
+    </div>
+
+    <div class="reveal">
+      <h3 class="section-title" style="text-align:center;margin-top:4rem;margin-bottom:0">Brand values</h3>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal" data-delay="0">
+        <div class="value-word">Clarity</div>
+        <p>Every decision — in design, in communication, in product — should reduce confusion, not add to it. The mat's markings exist because clarity enables correct movement.</p>
+      </div>
+      <div class="value-card reveal" data-delay="100">
+        <div class="value-word">Simplicity</div>
+        <p>The most powerful tools are often the simplest ones. We resist complexity for its own sake. What matters is what works — used consistently, used correctly.</p>
+      </div>
+      <div class="value-card reveal" data-delay="200">
+        <div class="value-word">Consistency</div>
+        <p>Results in movement come from showing up daily. We design for the person who wants to build a practice, not just try something once.</p>
+      </div>
+      <div class="value-card reveal" data-delay="0">
+        <div class="value-word">Quality</div>
+        <p>Premium is not about price — it's about intention. Every material choice, every marking decision, every word on this site reflects a commitment to quality over volume.</p>
+      </div>
+      <div class="value-card reveal" data-delay="100">
+        <div class="value-word">Access</div>
+        <p>Professional-quality movement guidance should not require a clinic, a therapist, or an expensive gym. ALIGNA makes that guidance physical, portable, and permanent.</p>
+      </div>
+      <div class="value-card reveal" data-delay="200">
+        <div class="value-word">Honesty</div>
+        <p>We are a wellness product, not a medical solution. We will always be transparent about what ALIGNA can and cannot do — and we will never overstate our claims.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE VISION -->
+<section class="section vision-section">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label">Where we're going</span>
+      <div class="divider divider-center"></div>
+      <h2 class="section-title">This is just<br>the beginning.</h2>
+      <p class="body-lg" style="color:var(--stone);max-width:520px;margin:1rem auto 0">The first ALIGNA mat is the foundation. What we're building toward is a complete guided movement ecosystem.</p>
+    </div>
+    <div class="vision-items">
+      <div class="vision-item reveal" data-delay="0">
+        <div class="vision-icon">①</div>
+        <div>
+          <h3>Guided video library</h3>
+          <p>A growing library of follow-along routines filmed from above, showing the alignment markings in real-time use. For every level, every routine type.</p>
+        </div>
+      </div>
+      <div class="vision-item reveal" data-delay="100">
+        <div class="vision-icon">②</div>
+        <div>
+          <h3>Travel version</h3>
+          <p>A lighter, more compact version of ALIGNA — same precision marking system, designed for people who travel and won't give up their practice on the road.</p>
+        </div>
+      </div>
+      <div class="vision-item reveal" data-delay="200">
+        <div class="vision-icon">③</div>
+        <div>
+          <h3>Professional & clinic edition</h3>
+          <p>A version designed for physical therapists, chiropractors, and movement coaches to use in their practice — with extended marking systems and clinical durability.</p>
+        </div>
+      </div>
+      <div class="vision-item reveal" data-delay="300">
+        <div class="vision-icon">④</div>
+        <div>
+          <h3>More movement systems</h3>
+          <p>Additional products designed around specific movement needs — hip mobility, shoulder alignment, posture correction — all sharing the same guided marking philosophy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="label">Get in touch</span>
+        <div class="divider"></div>
+        <h2 class="section-title">We'd love to hear<br>from you.</h2>
+        <p class="body-lg" style="color:var(--stone);margin-bottom:2.5rem">Whether you have a question about the mat, want to discuss a partnership, or simply want to share your own back pain journey — we're listening.</p>
+        <div class="contact-types">
+          <div class="contact-type-card">
+            <div class="ctc-icon">✦</div>
+            <div>
+              <h3>Influencer & creator partnerships</h3>
+              <p>If you create content around movement, wellness, or back health and would like to collaborate, we'd love to connect.</p>
+            </div>
+          </div>
+          <div class="contact-type-card" id="partnerships">
+            <div class="ctc-icon">✦</div>
+            <div>
+              <h3>Wholesale & clinic inquiries</h3>
+              <p>Clinics, studios, and wellness professionals interested in ALIGNA for their practice — reach out directly.</p>
+            </div>
+          </div>
+          <div class="contact-type-card">
+            <div class="ctc-icon">✦</div>
+            <div>
+              <h3>Media & press</h3>
+              <p>For editorial coverage, interviews, or media resources, please use the contact form and select the media option.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form class="contact-form" onsubmit="handleContact(event)">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" placeholder="Your first name" required>
+            </div>
+            <div class="form-field">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" placeholder="Your last name">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-field">
+            <label for="inquiry">Type of inquiry</label>
+            <select id="inquiry">
+              <option value="">Select a topic…</option>
+              <option>Product question</option>
+              <option>Partnership / collaboration</option>
+              <option>Wholesale / clinic inquiry</option>
+              <option>Media / press</option>
+              <option>General message</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark" style="width:100%;justify-content:center" id="contact-btn">Send Message</button>
+          <p style="font-size:0.7rem;color:var(--stone)">We respond to all messages within 2–3 business days.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">ALIGN<span>A</span></div><p class="footer-tagline">A premium guided movement mat designed to support aligned, confident movement at home.</p></div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="the-mat.html">The Mat</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="index.html#waitlist">Join Waitlist</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="our-story.html">Our Story</a></li><li><a href="#mission">Mission</a></li><li><a href="#contact">Contact</a></li><li><a href="#partnerships">Partnerships</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="legal.html#privacy">Privacy Policy</a></li><li><a href="legal.html#terms">Terms</a></li><li><a href="legal.html#disclaimer">Disclaimer</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ALIGNA. All rights reserved.</p>
+      <p class="footer-disclaimer">ALIGNA is a wellness product, not a medical device. Consult a healthcare professional before beginning any exercise program.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ALIGNA — Shared JavaScript
+
+// Mobile menu
+const mobileBtn = document.querySelector('.nav-mobile-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+  document.addEventListener('click', e => {
+    if (!mobileBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+      mobileMenu.classList.remove('open');
+    }
+  });
+}
+
+// Active nav link
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
+  if (link.getAttribute('href') === currentPage) link.classList.add('active');
+});
+
+// Scroll reveal
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      entry.target.style.transitionDelay = (entry.target.dataset.delay || 0) + 'ms';
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// Email form handler
+document.querySelectorAll('.email-form').forEach(form => {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const input = form.querySelector('input[type="email"]');
+    const btn = form.querySelector('button');
+    if (!input.value || !input.value.includes('@')) {
+      input.style.borderColor = '#c94040';
+      setTimeout(() => input.style.borderColor = '', 2000);
+      return;
+    }
+    // Replace this with your actual email service (Mailchimp, ConvertKit, etc.)
+    btn.textContent = 'Thank you!';
+    btn.style.background = '#4a6741';
+    input.value = '';
+    setTimeout(() => {
+      btn.textContent = 'Join Waitlist';
+      btn.style.background = '';
+    }, 4000);
+  });
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(item => {
+  const q = item.querySelector('.faq-q');
+  const a = item.querySelector('.faq-a');
+  const icon = item.querySelector('.faq-icon');
+  if (q && a) {
+    q.addEventListener('click', () => {
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        const ia = i.querySelector('.faq-a');
+        const ii = i.querySelector('.faq-icon');
+        if (ia) ia.style.maxHeight = null;
+        if (ii) ii.textContent = '+';
+      });
+      if (!open) {
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+        if (icon) icon.textContent = '−';
+      }
+    });
+  }
+});
+
+</script>
+<script>
+function handleContact(e) {
+  e.preventDefault();
+  const btn = document.getElementById('contact-btn');
+  btn.textContent = 'Message sent ✓';
+  btn.style.background = '#4a6741';
+  setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; }, 4000);
+}
+</script>
+</body>
+</html>
