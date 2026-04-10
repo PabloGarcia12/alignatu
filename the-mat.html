@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The ALIGNA guided movement mat. Premium alignment markings, non-slip surface, designed for lower back pain relief exercises at home. Join the waitlist.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="The ALIGNA Mat — Precision Alignment for Back Pain Relief">
+<meta property="og:description" content="Premium exercise mat with built-in alignment guides. Designed for guided lower back pain relief routines at home.">
+<meta property="og:type" content="product">
+<link rel="canonical" href="https://www.alignamat.com/the-mat.html">
+<title>The Mat — ALIGNA Guided Movement Mat</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* THE MAT PAGE */
+.page-hero {
+  padding: 140px 0 80px;
+  background: var(--cream2);
+  border-bottom: 1px solid var(--line);
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  padding: 5rem 0;
+}
+
+.product-gallery {
+  position: sticky;
+  top: 90px;
+}
+
+.main-product-view {
+  background: var(--ink2);
+  border-radius: 4px;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 480px;
+}
+
+.product-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.thumb {
+  background: var(--cream2);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.thumb:hover, .thumb.active { border-color: var(--accent); }
+.thumb-label { font-size: 0.6rem; text-align: center; color: var(--stone); margin-top: 0.5rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* PRODUCT INFO */
+.product-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.product-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: pulse 2s infinite; }
+
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+.product-name {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.product-tagline { font-size: 0.85rem; color: var(--stone); margin-bottom: 1.5rem; }
+
+.product-price {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.price-main {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--ink);
+}
+
+.price-note { font-size: 0.72rem; color: var(--stone); }
+
+.product-actions { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
+.product-actions .btn { width: 100%; justify-content: center; }
+
+.product-assurances {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.assurance {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: var(--stone);
+}
+
+.assurance svg { width: 14px; height: 14px; stroke: var(--accent); fill: none; stroke-width: 1.5; flex-shrink: 0; }
+
+/* FEATURES DEEP DIVE */
+.features-section { background: var(--cream2); }
+
+.features-deep {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.feature-deep-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 2rem;
+  transition: border-color 0.25s;
+}
+
+.feature-deep-card:hover { border-color: var(--accent); }
+
+.feature-deep-num {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--sand);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.feature-deep-card h3 {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
+}
+
+.feature-deep-card p { font-size: 0.82rem; color: var(--stone); line-height: 1.7; }
+
+/* COMPARISON */
+.comparison-section { }
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+}
+
+.comparison-table th {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.comparison-table th:first-child { width: 40%; color: var(--stone); }
+.comparison-table th:nth-child(2) { background: var(--ink2); color: var(--cream); text-align: center; border-radius: 4px 4px 0 0; }
+.comparison-table th:last-child { color: var(--stone); text-align: center; }
+
+.comparison-table td {
+  padding: 0.9rem 1.5rem;
+  border-bottom: 1px solid var(--line2);
+  color: var(--stone);
+}
+
+.comparison-table td:nth-child(2) {
+  background: rgba(28,26,24,0.03);
+  text-align: center;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.comparison-table td:last-child { text-align: center; color: var(--bark); }
+
+.check { color: var(--accent); font-size: 1rem; }
+.cross { color: var(--bark); opacity: 0.5; font-size: 1rem; }
+
+/* FOR WHO */
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.who-card {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: border-color 0.2s;
+}
+
+.who-card:hover { border-color: var(--accent); }
+
+.who-icon {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 44px;
+}
+
+.who-card h3 { font-family: var(--sans); font-size: 0.82rem; font-weight: 500; margin-bottom: 0.35rem; }
+.who-card p { font-size: 0.78rem; color: var(--stone); line-height: 1.6; }
+
+/* FAQ */
+.faq-section { background: var(--cream2); }
+.faq-list { max-width: 720px; margin: 3rem auto 0; }
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--ink);
+  gap: 1rem;
+  user-select: none;
+}
+
+.faq-q:hover { color: var(--accent); }
+.faq-icon { font-size: 1.2rem; color: var(--accent); flex-shrink: 0; font-weight: 300; }
+
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-a-inner {
+  padding-bottom: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--stone);
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .product-layout { grid-template-columns: 1fr; }
+  .product-gallery { position: static; }
+  .features-deep { grid-template-columns: 1fr; }
+  .who-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">ALIGN<span>A</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="the-mat.html">The Mat</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="our-story.html">Our Story</a></li>
+      <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+    </ul>
+    <button class="nav-mobile-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="the-mat.html">The Mat</a>
+  <a href="how-it-works.html">How It Works</a><a href="our-story.html">Our Story</a>
+  <a href="index.html#waitlist">Join Waitlist</a>
+</div>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="label">The product</span>
+    <div class="divider"></div>
+    <h1 class="display fade-up" style="max-width:600px">The mat that<br>guides your <em>every move.</em></h1>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section class="section">
+  <div class="container">
+    <div class="product-layout">
+
+      <!-- Gallery -->
+      <div class="product-gallery reveal">
+        <div class="main-product-view">
+          <svg viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:260px">
+            <rect x="10" y="10" width="280" height="420" rx="12" fill="#1c1a18"/>
+            <line x1="150" y1="30" x2="150" y2="420" stroke="#4a6741" stroke-width="1.2" opacity="0.7" stroke-dasharray="4 5"/>
+            <line x1="20" y1="220" x2="280" y2="220" stroke="#4a6741" stroke-width="1.2" opacity="0.7" stroke-dasharray="4 5"/>
+            <rect x="70" y="55" width="160" height="3" rx="1.5" fill="#4a6741" opacity="0.6"/>
+            <rect x="70" y="208" width="160" height="3" rx="1.5" fill="#4a6741" opacity="0.6"/>
+            <rect x="70" y="310" width="160" height="3" rx="1.5" fill="#4a6741" opacity="0.45"/>
+            <circle cx="150" cy="220" r="56" stroke="#4a6741" stroke-width="1" opacity="0.45"/>
+            <circle cx="150" cy="220" r="32" stroke="#6b9467" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="150" cy="220" r="12" stroke="#6b9467" stroke-width="1.5" opacity="0.8"/>
+            <circle cx="150" cy="220" r="3" fill="#6b9467"/>
+            <line x1="110" y1="180" x2="150" y2="220" stroke="#6b9467" stroke-width="0.8" opacity="0.5"/>
+            <line x1="190" y1="180" x2="150" y2="220" stroke="#6b9467" stroke-width="0.8" opacity="0.5"/>
+            <line x1="110" y1="260" x2="150" y2="220" stroke="#6b9467" stroke-width="0.8" opacity="0.5"/>
+            <line x1="190" y1="260" x2="150" y2="220" stroke="#6b9467" stroke-width="0.8" opacity="0.5"/>
+            <g opacity="0.4" stroke="#6b9467" stroke-width="0.8">
+              <line x1="22" y1="80" x2="32" y2="80"/><line x1="22" y1="120" x2="28" y2="120"/>
+              <line x1="22" y1="160" x2="32" y2="160"/><line x1="22" y1="220" x2="36" y2="220"/>
+              <line x1="22" y1="280" x2="32" y2="280"/><line x1="22" y1="340" x2="28" y2="340"/>
+              <line x1="22" y1="380" x2="32" y2="380"/>
+            </g>
+            <rect x="94" y="72" width="36" height="24" rx="5" stroke="#6b9467" stroke-width="0.8" opacity="0.3"/>
+            <rect x="170" y="72" width="36" height="24" rx="5" stroke="#6b9467" stroke-width="0.8" opacity="0.3"/>
+            <rect x="106" y="378" width="28" height="16" rx="4" stroke="#6b9467" stroke-width="0.8" opacity="0.3"/>
+            <rect x="166" y="378" width="28" height="16" rx="4" stroke="#6b9467" stroke-width="0.8" opacity="0.3"/>
+            <text x="150" y="422" text-anchor="middle" font-family="Georgia" font-size="8" fill="#4a6741" opacity="0.7" letter-spacing="5">ALIGNA</text>
+          </svg>
+        </div>
+        <div class="product-thumbnails">
+          <div>
+            <div class="thumb active">
+              <svg viewBox="0 0 60 60" width="40" fill="none"><rect width="60" height="60" rx="4" fill="#1c1a18"/><line x1="30" y1="5" x2="30" y2="55" stroke="#4a6741" stroke-width="1" opacity="0.7"/><circle cx="30" cy="30" r="14" stroke="#6b9467" stroke-width="1" opacity="0.7"/></svg>
+            </div>
+            <div class="thumb-label">Full mat</div>
+          </div>
+          <div>
+            <div class="thumb">
+              <svg viewBox="0 0 60 60" width="40" fill="none"><rect width="60" height="60" rx="4" fill="#1c1a18"/><circle cx="30" cy="30" r="16" stroke="#4a6741" stroke-width="1.5"/><circle cx="30" cy="30" r="8" stroke="#6b9467" stroke-width="1.5"/><circle cx="30" cy="30" r="3" fill="#6b9467"/></svg>
+            </div>
+            <div class="thumb-label">Alignment</div>
+          </div>
+          <div>
+            <div class="thumb">
+              <svg viewBox="0 0 60 60" width="40" fill="none"><rect width="60" height="60" rx="4" fill="#1c1a18"/><line x1="5" y1="30" x2="55" y2="30" stroke="#4a6741" stroke-width="1.5"/><line x1="10" y1="15" x2="16" y2="15" stroke="#6b9467" stroke-width="1"/><line x1="10" y1="22" x2="14" y2="22" stroke="#6b9467" stroke-width="1"/><line x1="10" y1="30" x2="18" y2="30" stroke="#6b9467" stroke-width="1"/></svg>
+            </div>
+            <div class="thumb-label">Guide lines</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product info -->
+      <div class="reveal">
+        <div class="product-badge">Coming soon — join waitlist</div>
+        <h1 class="product-name">ALIGNA<br>Guided Movement Mat</h1>
+        <p class="product-tagline">Precision alignment markings · Non-slip surface · Designed for guided back pain relief</p>
+
+        <div class="product-price">
+          <span class="price-main">$129</span>
+          <span class="price-note">Launch price · Free shipping</span>
+        </div>
+
+        <div class="product-actions">
+          <a href="index.html#waitlist" class="btn btn-dark">Reserve Your Mat — Join Waitlist</a>
+          <a href="how-it-works.html" class="btn btn-outline">See How It Works</a>
+        </div>
+
+        <div class="product-assurances">
+          <div class="assurance">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            30-day guarantee
+          </div>
+          <div class="assurance">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            Free shipping
+          </div>
+          <div class="assurance">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Made with care
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--cream2);border-radius:2px;border:1px solid var(--line)">
+          <p class="label" style="margin-bottom:0.5rem">In the box</p>
+          <ul style="list-style:none;font-size:0.82rem;color:var(--stone);line-height:2">
+            <li>✦ ALIGNA Guided Movement Mat</li>
+            <li>✦ Printed alignment guide card</li>
+            <li>✦ Beginner routine booklet</li>
+            <li>✦ Carry strap</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES DEEP -->
+<section class="features-section section">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label">What makes it different</span>
+      <div class="divider divider-center"></div>
+      <h2 class="section-title">Every mark has<br>a purpose.</h2>
+    </div>
+    <div class="features-deep">
+      <div class="feature-deep-card reveal" data-delay="0">
+        <div class="feature-deep-num">01</div>
+        <h3>Center alignment system</h3>
+        <p>Concentric rings and a precision center point let you instantly locate your spine's neutral position. Every exercise starts from a known reference — not a guess.</p>
+      </div>
+      <div class="feature-deep-card reveal" data-delay="100">
+        <div class="feature-deep-num">02</div>
+        <h3>Angle reference guides</h3>
+        <p>45° and 90° angle lines ensure your limbs travel through safe, correct arcs of motion. Eliminate the risk of overextension or poor hip rotation during your routine.</p>
+      </div>
+      <div class="feature-deep-card reveal" data-delay="200">
+        <div class="feature-deep-num">03</div>
+        <h3>Body zone markers</h3>
+        <p>Shoulder, hip, knee, and foot placement zones are clearly defined for every key exercise. No more wondering if you're in the right starting position.</p>
+      </div>
+      <div class="feature-deep-card reveal" data-delay="300">
+        <div class="feature-deep-num">04</div>
+        <h3>Consistency ruler marks</h3>
+        <p>Lateral ruler-style marks along the edges help you reproduce exercises identically session after session — essential for progress and injury prevention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label">The difference</span>
+      <div class="divider divider-center"></div>
+      <h2 class="section-title">Not just a mat.<br>A guided system.</h2>
+    </div>
+    <div class="reveal" style="overflow-x:auto;margin-top:1rem">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>ALIGNA Mat</th>
+            <th>Standard yoga / gym mat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Precision alignment markings</td><td><span class="check">✓ Built-in</span></td><td><span class="cross">✗ None</span></td></tr>
+          <tr><td>Body zone reference guides</td><td><span class="check">✓ Full system</span></td><td><span class="cross">✗ None</span></td></tr>
+          <tr><td>Center spine alignment</td><td><span class="check">✓ Concentric rings</span></td><td><span class="cross">✗ None</span></td></tr>
+          <tr><td>Angle reference lines (45° / 90°)</td><td><span class="check">✓ Included</span></td><td><span class="cross">✗ None</span></td></tr>
+          <tr><td>Designed for back pain routines</td><td><span class="check">✓ Specific purpose</span></td><td><span class="cross">✗ Generic use</span></td></tr>
+          <tr><td>Beginner movement guide</td><td><span class="check">✓ Included</span></td><td><span class="cross">✗ Not included</span></td></tr>
+          <tr><td>Non-slip premium surface</td><td><span class="check">✓ High-grip</span></td><td>Varies</td></tr>
+          <tr><td>Consistent rep reproducibility</td><td><span class="check">✓ Yes — ruler marks</span></td><td><span class="cross">✗ No reference</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="section" style="background:var(--cream2)">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label">Who it's for</span>
+      <div class="divider divider-center"></div>
+      <h2 class="section-title">Built for people who<br>want to move better at home.</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-card reveal" data-delay="0">
+        <div class="who-icon">①</div>
+        <div>
+          <h3>People with lower back discomfort</h3>
+          <p>Whether you've been diagnosed with a disc issue or simply deal with chronic tension, ALIGNA gives your movement practice the structure it needs to be effective.</p>
+        </div>
+      </div>
+      <div class="who-card reveal" data-delay="100">
+        <div class="who-icon">②</div>
+        <div>
+          <h3>Home mobility beginners</h3>
+          <p>If you've wanted to start a home exercise routine but felt unsure about correct form, the alignment markings remove the guesswork entirely.</p>
+        </div>
+      </div>
+      <div class="who-card reveal" data-delay="200">
+        <div class="who-icon">③</div>
+        <div>
+          <h3>People who want more structure</h3>
+          <p>For those who love the idea of a consistent wellness practice but need visual cues and structure to make it stick day after day.</p>
+        </div>
+      </div>
+      <div class="who-card reveal" data-delay="300">
+        <div class="who-icon">④</div>
+        <div>
+          <h3>Premium wellness enthusiasts</h3>
+          <p>If your wellness tools reflect your values — quality, intention, design — ALIGNA was made for you. Function and aesthetics in equal measure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section section" id="faq">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="label">Questions</span>
+      <div class="divider divider-center"></div>
+      <h2 class="section-title">Frequently asked</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>Is ALIGNA a yoga mat?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">No. While ALIGNA can be used for yoga, it was specifically designed for guided movement routines — particularly exercises that support lower back health and alignment. The markings are calibrated for this purpose, not for general yoga practice.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>Is it suitable for complete beginners?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely. The alignment markings were designed precisely for beginners who need visual reference. You don't need prior experience — the mat guides you through correct positioning from your very first session.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>Is this a medical product?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">No. ALIGNA is a wellness and movement product. It is not a medical device and is not intended to diagnose, treat, cure, or prevent any medical condition. We always recommend consulting a qualified healthcare professional before beginning any new exercise program, especially if you have a diagnosed condition.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>How thick is the mat?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">ALIGNA is designed with a 6mm premium density layer — thick enough for joint cushioning during floor exercises, firm enough to maintain stability during movement. Full specifications will be published at launch.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>How do I clean it?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">ALIGNA's surface is easy to maintain. Wipe down with a damp cloth and mild soap after use. The alignment markings are printed into the material — not surface-applied — so they will not fade or wear with regular cleaning.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>When will it be available?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">ALIGNA is launching soon. Waitlist members will be the first to know the exact date, will receive priority access, and will have access to early launch pricing. Join the waitlist to secure your place.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>What is your return policy?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">We offer a 30-day satisfaction guarantee. If you are not happy with your ALIGNA mat for any reason, contact us within 30 days of delivery and we will arrange a return. Full details will be available at launch.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="email-section section" style="background:var(--ink)">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <span class="label" style="color:var(--accent2)">Reserve yours</span>
+      <div class="divider divider-center" style="background:var(--accent2)"></div>
+      <h2 class="section-title" style="color:var(--cream);font-size:clamp(1.8rem,3.5vw,2.8rem)">The mat is almost ready.<br><em style="color:var(--accent2)">Are you?</em></h2>
+      <p style="color:var(--bark);margin:1.5rem auto;max-width:440px;font-size:0.9rem;line-height:1.8">Join the waitlist for early access, launch pricing, and your free guided routine booklet.</p>
+      <form class="email-form" style="margin:0 auto" onsubmit="return false">
+        <input type="email" placeholder="Your email address" autocomplete="email" required>
+        <button type="submit">Join Waitlist</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">ALIGN<span>A</span></div>
+        <p class="footer-tagline">A premium guided movement mat designed to support aligned, confident movement at home.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="the-mat.html">The Mat</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="index.html#waitlist">Join Waitlist</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="our-story.html">Our Story</a></li><li><a href="our-story.html#mission">Mission</a></li><li><a href="our-story.html#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="legal.html#privacy">Privacy Policy</a></li><li><a href="legal.html#terms">Terms</a></li><li><a href="legal.html#shipping">Shipping</a></li><li><a href="legal.html#disclaimer">Disclaimer</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ALIGNA. All rights reserved.</p>
+      <p class="footer-disclaimer">ALIGNA is a movement and wellness product. It is not a medical device and is not intended to diagnose, treat, cure, or prevent any medical condition. Always consult a qualified healthcare professional before beginning any exercise program.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
